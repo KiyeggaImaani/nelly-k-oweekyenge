@@ -1,0 +1,21 @@
+{
+    "name": "NELLY K OWEEKYENGE Music App",
+    "short_name": "NELLY K Music",
+    "description": "Official music app for NELLY K OWEEKYENGE",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#1a1a1a",
+    "icons": [
+        {
+            "src": "artist.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "artist.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
