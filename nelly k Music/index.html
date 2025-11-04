@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NELLY K OWEEKYENGE - Music App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6a0dad">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <div class="header-content">
+            <h1>NELLY K OWEEKYENGE</h1>
+            <p>Official Music Collection</p>
+            <button id="dark-mode-toggle" class="toggle-btn">🌙</button>
+        </div>
+    </header>
+    <main>
+        <div class="player-section">
+            <div class="player-card">
+                <div class="album-art">
+                    <img src="images/C7DL4767.JPG" alt="NELLY K OWEEKYENGE" id="album-image">
+                </div>
+                <div class="track-info">
+                    <h2 id="track-title">Select a Song</h2>
+                    <p id="track-artist">NELLY K OWEEKYENGE</p>
+                </div>
+                <div class="visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="controls">
+                    <button id="prev-btn" class="control-btn">⏮</button>
+                    <button id="play-pause-btn" class="control-btn play">▶</button>
+                    <button id="next-btn" class="control-btn">⏭</button>
+                </div>
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" value="0" max="100">
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="volume-container">
+                    <span>🔊</span>
+                    <input type="range" id="volume-bar" value="50" max="100">
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/nellykugandan" class="social-link" target="_blank">📘 Facebook</a>
+                    <a href="https://twitter.com/nellykugandan" class="social-link" target="_blank">🐦 Twitter</a>
+                    <a href="https://www.instagram.com/nellykugandan" class="social-link" target="_blank">📷 Instagram</a>
+                    <a href="https://www.tiktok.com/@nellykugandan" class="social-link" target="_blank">🎵 TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <h3>Playlist</h3>
+            </div>
+            <ul id="song-list">
+                <!-- Songs will be populated dynamically by JavaScript -->
+            </ul>
+        </div>
+        <button class="playlist-toggle" id="playlist-toggle">Hide</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
